@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --Yellow:#ff9500;
+    --White :#ffffff;
+    --Black : #000000;
+    --lightBlack: #383838;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--White);
+}
+
+#home {
+    background-color: var(--Black); /* Choose your desired background color */
+}
+
+.nav-bar {
+    height: 70px;
+    background-color: var(--Black);
+}
+
+.logo-nav {
+    float: left;
+    margin-left: 150px;
+    color: var(--White);
+}
+
+.logo-m {
+    color: var(--Yellow);
+}
+
+.nav-items {
+    float: right;
+    margin-right: 150px;
+    margin-top: 23px;
+}
+
+.nav-items nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.nav-items nav ul li a {
+    color: var(--White);
+    text-decoration: none;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.nav-items nav ul li a:hover {
+    font-weight: bold;
+    color: var(--Yellow);
+}
+
+/*home*/
+
+.home-img {
+    margin-left: 150px;
+}
+
+.h-img-1 {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.home-titles-d {
+    float: right;
+    margin-top: 250px;
+    margin-right: 350px;
+    height: auto;
+    width: auto;
+}
+
+.home-titles-d h3  {
+font-size: 60px;
+color: var(--Yellow);
+}
+
+.home-titles-d h1  {
+    font-size: 40px;
+    color: var(--White);
+    text-align: center;
+    }
+
+
+.home-titles-d h4  {
+    font-size: 20px;
+    color: var(--White);
+    text-align: center;
+ }
+
+ .home-btn {
+    text-align: center;
+ }
+
+ .myprojects-btn {
+    margin-right: 25px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid var(--White);
+    border-radius: 50px;
+    background-color: var(--Black);
+    color: var(--White);
+ }
+
+ .ContactMe-btn {
+    margin-left: 25px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid var(--Yellow);
+    border-radius: 50px;
+    background-color: var(--Yellow);
+    color: var(--White);
+ }
+
+ .ContactMe-btn:hover {
+    width: 150px;
+    height: 50px;
+    border: 2px solid var(--White);
+    border-radius: 50px;
+    background-color: var(--Black);
+    color: var(--White);
+ }
+
+
+ /*About Me */
+
+ #about {
+    background-color: var(--lightBlack); /* Choose your desired background color */
+    padding: 20px 150px 30px 150px; /* top right bottom left */
+}
+
+
+ .aboutme-title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.About-yellow {
+    color: var(--Yellow);
+}
+
+.fas.fa-user {
+    color: blue; /* For example, set the color to blue */
+    font-size: 24px; /* Set the font size */
+}
+
+.content-container {
+    display: flex;
+}
+
+.text-container {
+    margin-left: 20px; /* Adjust the margin as needed */
+    width: 1000px;
+}
+
+.profile-picture {
+    width: 350px; /* Set the desired width */
+}
+
+.whyme-title {
+    color: var(--Yellow);
+}
+
+.ProfessionalDesigner-title {
+    font-size: x-large;
+}
+
+.about-Contact-me {
+    background-color: var(--Yellow);
+    color: var(--White);
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: medium;
+    margin-top: 20px;
+}
+
+/*service section*/
+
+#service {
+    background-color: var(--Black);
+    padding: 30px 270px; /* Adjusted padding */
+}
+
+.GraphicDesign-box,
+.WebDevelopment-box,
+.WebDesign-box,
+.Customer-Support-box,
+.service-box {
+    padding: 70px; /* Add padding inside the box */
+    margin-bottom: 20px; /* Add some space between service boxes */
+    background-color: #141414; /* Set background color */
+    width: 300px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.18); /* Add box shadow */
+}
+
+.myservice-title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.service-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 0px 20px;
+}
+
+/*Project section*/
+
+#projects {
+    background-color: var(--lightBlack);
+    padding: 30px 260px; /* Adjusted padding */
+}
+
+.Projects-title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+}
+
+.project-container img {
+    width: 100%; /* Set the width of the images to 100% of their container */
+    width: 460px; /* Set a maximum width for the images */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/*Assignment section*/
+
+#assignments {
+    background-color: var(--Black);
+    padding: 30px 120px; /* Adjusted padding */
+}
+
+.Assignment-title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.Assignment-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Three columns */
+    gap: 10px 10px;
+}
+
+.Assignment-container img {
+    width: 300px; /* Set the width of the images */
+    height: 300px; /* Set the height of the images to match the width */
+    object-fit: cover; /* Maintain aspect ratio and crop as needed */
+}
+
+
+/*Skill section*/
+
+#Skill {
+    background-color: var(--lightBlack);
+    padding: 40px 120px; /* Adjusted padding */
+}
+
+.skill-title {
+    text-align: center;
+    color: var(--Yellow);
+    font-size: xx-large;
+}
+
+.Skill-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    gap: 80px; /* Add a gap between images */
+}
+
+.Skill-container img {
+    width: 100px; /* Set the width of the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/*Contact section*/
+
+#contact {
+    background-color: var(--Black);
+    padding: 40px 120px; /* Adjusted padding */
+}
+
+.contact-title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left side */
+}
+
+.inputname,
+.inputemail,
+.inputnumber {
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #d6d6d6;
+}
+
+.contact-container button {
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    outline: none;
+}
+
+.inputmsg {
+    width: 600px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background-color: #d6d6d6;
+    color: var(--White);
+}
+
+.inputname::placeholder,
+.inputemail::placeholder,
+.inputnumber::placeholder,
+.inputmsg::placeholder {
+    color: #b1b1b1; /* Change the placeholder text color */
+}
+
+
+.inputname:focus,
+.inputemail:focus,
+.inputnumber:focus,
+.inputmsg:focus {
+    border-color: var(--Yellow);
+}
+
+.contact-container button {
+    background-color: var(--Yellow);
+    color: var(--White);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+    background-color: var(--Yellow);
+    color: var(--Black);
+}
+
+/*About footer section*/
+
+#aboutfooter {
+    background-color: var(--lightBlack);
+    padding: 40px 320px; /* Adjusted padding */
+    display: flex;
+
+}
+
+
+.footone{
+    width: 400px;
+    margin-left: 120px;
+}
+.foottwo{
+    width: 240px;
+    margin-left: 120px;
+}
+.footthree {
+    width: 160px;
+   margin-left: 120px;
+}
+
+.footthree ul,
+.foottwo ul {
+    list-style-type: none; /* Remove the bullet points */
+}
+
+.footthree ul li{
+    margin: 15px;
+    font-size: larger;
+}
+.foottwo ul li {
+    margin: 15px;
+}
+
+.foottwo ul li a {
+    text-decoration: none;
+    color: inherit; /* Ensure links inherit text color */
+    font-size: larger;
+}
+
+.abdate {
+    font-size: small;
+    color: #b1b1b1;
+}
+
+.title-UsefullLinks {
+    text-align: center;
+}
+
+.title-LatestNews {
+    text-align: center;
+}
+
+.titlethreediv {
+    margin-right: 1px;
+}
+
+footer {
+    padding: 40px;
+    text-align: center; /* Center align the text */
+    font-size: x-large; /* Adjust the font size */
+    background-color: var(--Black);
+    color: var(--White);
+}
