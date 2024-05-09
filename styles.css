@@ -912,4 +912,8 @@ footer {
 }
 
     /*skill*/
+    footer {
+        padding: 20px;
+        font-size: medium; /* Adjust the font size */
+    }
   }
