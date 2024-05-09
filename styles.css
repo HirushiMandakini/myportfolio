@@ -827,3 +827,65 @@ footer {
         font-size: larger; /* Adjust the font size */
     }
 }
+
+@media only screen and (max-width: 650px) {
+
+    /*navbar*/
+    .nav-items {
+        display: none;
+    }
+
+    .fa-bars {
+        font-size: 25px; 
+        margin-right: 25px;
+        color: var(--Yellow);
+      }
+    /*navbar*/
+
+       /*home*/
+
+       .homesec{
+        display: grid;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        padding: 0px 10px;
+        gap: 2px;
+    }
+
+    .hometextandbtncontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        background-image: url('assets/images/cssprophoto.png'); /* Add the path to your image */
+        background-size: cover; /* Cover the entire container with the background image */
+        background-position: center; /* Center the background image */
+        height: 650px;
+    } 
+
+    .img-container img {
+        display: none;
+    }
+
+    .hometextdiv h3 {
+        font-size: 26px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    
+    .hometextdiv h1 {
+        font-size: 20px;
+    }
+    
+    .hometextdiv h4 {
+        font-size: 15px;
+    }
+
+    .ContactMe-btn,
+    .myprojects-btn {
+        width: 100px;
+        height: 30px; /* Set the height of buttons */
+        margin-top: 10px; /* Add some margin between buttons */
+    }
+    /*home*/
+
+  }
