@@ -757,4 +757,73 @@ footer {
 }
 
   /*my assignment*/
+    /*skill*/
+    #Skill {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 120px; /* Adjusted padding */
+    }
+    .Skill-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Three columns */
+        gap: 40px; /* Add a gap between images */
+    }
+    
+    .Skill-container img {
+        width: 70px; /* Set the width of the images */
+    }
+        /*skill*/
+    
+    
+        /*contactme*/
+        #contact {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px 20px; /* Adjusted padding */
+        }
+    
+        .inputname,
+        .inputemail,
+        .inputnumber {
+            width: 300px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        .inputmsg {
+            width: 300px;
+            height: 50px;
+            border-radius: 10px;
+        }
+    
+        /*contactme*/
+    
+        /*About footer section*/
+    
+    #aboutfooter {
+        padding: 40px 10px; /* Adjusted padding */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    
+    
+    .footone{
+        width: 300px;
+        margin-left: 0px;
+    }
+    .foottwo{
+    display: none;
+    }
+    .footthree {
+        display: none;
+    }
+    
+    footer {
+        padding: 20px;
+        font-size: larger; /* Adjust the font size */
+    }
 }
