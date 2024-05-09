@@ -1097,5 +1097,21 @@ footer {
 }
 
  /*Assignment section*/
-    
+     /*Skill section*/
+ .Skill-container img {
+    width: 60px; /* Set the width of the images */
+}
+ /*Skill section*/
+
+ /*Contact section*/
+ .inputname,
+.inputemail,
+.inputnumber {
+    width: 250px;
+}
+.inputmsg {
+    width: 250px;
+
+}
+ /*Contact section*/
   }
