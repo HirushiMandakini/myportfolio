@@ -917,3 +917,17 @@ footer {
         font-size: medium; /* Adjust the font size */
     }
   }
+
+  @media only screen and (max-width: 375px) {
+    /*home*/
+    .hometextandbtncontainer {
+        height: 550px;
+    } 
+
+    .hometextdiv h3 {
+        font-size: 23px;
+    }
+    /*home*/
+
+    
+  }
