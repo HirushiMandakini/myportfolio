@@ -15,126 +15,143 @@ body {
     color: var(--White);
 }
 
-#home {
-    background-color: var(--Black); /* Choose your desired background color */
-}
-
 .nav-bar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Center items vertically */
     height: 70px;
     background-color: var(--Black);
-}
-
-.logo-nav {
-    float: left;
-    margin-left: 150px;
-    color: var(--White);
 }
 
 .logo-m {
     color: var(--Yellow);
 }
+.logo-nav {
+    margin-left: 50px;
+}
+.nav-items ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 40px;
+}
 
 .nav-items {
-    float: right;
-    margin-right: 150px;
-    margin-top: 23px;
+    margin-right: 50px; /* Add space between list items */
 }
 
-.nav-items nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
-.nav-items nav ul li {
-    display: inline;
-    margin-left: 10px;
-}
-
-.nav-items nav ul li a {
-    color: var(--White);
-    text-decoration: none;
-    margin-right: 15px;
-    margin-left: 15px;
+.nav-items ul li a {
     font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
 }
 
-.nav-items nav ul li a:hover {
-    font-weight: bold;
-    color: var(--Yellow);
+.nav-items ul li:hover {
+    color: var(--Yellow); /* Change to your desired text color */
 }
+
+
 
 /*home*/
 
-.home-img {
-    margin-left: 150px;
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Set a lower z-index */
 }
 
-.h-img-1 {
-    width: auto;
-    height: auto;
-    position: relative;
-}
-
-.home-titles-d {
-    float: right;
-    margin-top: 250px;
-    margin-right: 350px;
-    height: auto;
-    width: auto;
-}
-
-.home-titles-d h3  {
-font-size: 60px;
-color: var(--Yellow);
-}
-
-.home-titles-d h1  {
-    font-size: 40px;
-    color: var(--White);
-    text-align: center;
-    }
-
-
-.home-titles-d h4  {
-    font-size: 20px;
-    color: var(--White);
-    text-align: center;
- }
-
- .home-btn {
-    text-align: center;
- }
-
- .myprojects-btn {
-    margin-right: 25px;
-    width: 150px;
-    height: 50px;
-    border: 2px solid var(--White);
-    border-radius: 50px;
+.homesec{
     background-color: var(--Black);
-    color: var(--White);
- }
+    display: flex;
+    padding: 0px 150px; /* top/bottom padding first, then left/right padding */
+    gap: 150px;
+    position: relative; /* Ensure relative positioning for absolute child */
+    z-index: 0; /* Set a lower z-index */
+}
 
- .ContactMe-btn {
-    margin-left: 25px;
+.img-container {
+    position: relative; /* Ensure relative positioning for absolute child */
+    z-index: 1; /* Set a higher z-index */
+}
+
+.img-container img {
+    max-width: 540px; /* This will make the image scale down if it's wider than its container */
+    height: auto; /* This will maintain the aspect ratio */
+}
+
+.hometextandbtncontainer {
+    position: relative; /* Ensure relative positioning for absolute child */
+    z-index: 1; /* Set a higher z-index */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+}
+
+.hometextdiv h3 {
+    color: var(--Yellow);
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-weight: lighter;
+}
+
+.hometextdiv h1 {
+    font-size: 45px;
+}
+
+.hometextdiv h4 {
+    font-size: 25px;
+}
+
+.homebtncontainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjust the gap between buttons */
+}
+
+.ContactMe-btn {
     width: 150px;
     height: 50px;
-    border: 2px solid var(--Yellow);
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: var(--Yellow);
     color: var(--White);
- }
+    font-size: 13px;
+    border: 2px solid var(--Yellow);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+}
 
- .ContactMe-btn:hover {
-    width: 150px;
-    height: 50px;
-    border: 2px solid var(--White);
-    border-radius: 50px;
-    background-color: var(--Black);
+.ContactMe-btn:hover {
+    background-color: transparent;
     color: var(--White);
- }
+    border: 2px solid var(--White);
+}
 
+
+.myprojects-btn {
+    width: 150px;
+    border-radius: 30px;
+    font-size: 13px;
+    background-color: transparent;
+    color: var(--White);
+    border: 2px solid var(--White);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+}
+
+.myprojects-btn:hover {
+    background-color: var(--Yellow);
+    color: var(--Black);
+    border: 2px solid var(--Yellow);
+}
+
+
+
+/*home*/
 
  /*About Me */
 
@@ -374,23 +391,21 @@ color: var(--Yellow);
 
 #aboutfooter {
     background-color: var(--lightBlack);
-    padding: 40px 320px; /* Adjusted padding */
+    padding: 40px 50px; /* Adjusted padding */
     display: flex;
-
+    gap: 50px;
+    justify-content: center; /* Center items horizontally */
 }
 
 
 .footone{
     width: 400px;
-    margin-left: 120px;
 }
 .foottwo{
     width: 240px;
-    margin-left: 120px;
 }
 .footthree {
-    width: 160px;
-   margin-left: 120px;
+    width: 250px;
 }
 
 .footthree ul,
@@ -436,3 +451,4 @@ footer {
     background-color: var(--Black);
     color: var(--White);
 }
+
