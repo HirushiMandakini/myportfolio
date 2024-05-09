@@ -887,6 +887,11 @@ footer {
         margin-top: 10px; /* Add some margin between buttons */
     }
     /*home*/
+        /*my service*/
+        .service-container {
+            grid-template-columns: repeat(1, 1fr); /* Three columns */
+            }
+      /*my service*/
  /*my project*/
  .project-container {
     grid-template-columns: repeat(1, 1fr); /* Three columns */
