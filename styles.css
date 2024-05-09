@@ -1047,6 +1047,43 @@ footer {
             font-size: 11px;
         }
         /*aboutme*/
+         /*my service*/
+    #service {
+        padding: 10px 10px; /* Adjusted padding */
+    }
 
+     .GraphicDesign-box,
+     .WebDevelopment-box,
+     .WebDesign-box,
+     .Customer-Support-box,
+     .service-box {
+        padding: 20px; /* Add padding inside the box */
+        max-width: 200px;
+      }
+
+     .GraphicDesign-box p,
+     .WebDevelopment-box p,
+     .WebDesign-box p,
+     .Customer-Support-box p,
+     .service-box p {
+        font-size: 10px;
+      }
+
+      .GraphicDesign-box h2,
+      .WebDevelopment-box h2,
+      .WebDesign-box h2,
+      .Customer-Support-box h2,
+      .service-box h2 {
+         font-size: 17px;
+       }
+
+       .GraphicDesign-box img,
+      .WebDevelopment-box img,
+      .WebDesign-box img,
+      .Customer-Support-box img,
+      .service-box img {
+         max-width: 70px;
+       }
+ /*my service*/
     
   }
