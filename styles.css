@@ -539,5 +539,70 @@ footer {
         grid-template-columns: repeat(2, 1fr); /* Three columns */
     }
 
+        /*Project section*/
+
+#projects {
+    padding: 30px 150px; /* Adjusted padding */
+}
+
+.project-container {
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.project-container img {
+    width: 360px; /* Set a maximum width for the images */
+}
+
+/*Assignment section*/
+
+#assignments {
+    padding: 30px 80px; /* Adjusted padding */
+}
+
+.Assignment-container {
+    grid-template-columns: repeat(4, 1fr); /* Three columns */
+}
+
+.Assignment-container img {
+    width: 200px; 
+    height: 200px; 
+}
+
+/*Skill section*/
+
+#Skill {
+    padding: 40px 120px; /* Adjusted padding */
+}
+
+.Skill-container {
+    gap: 40px; /* Add a gap between images */
+}
+
+.Skill-container img {
+    width: 70px; /* Set the width of the images */
+}
+
+/*Contact section*/
+
+#contact {
+    padding: 40px 200px; /* Adjusted padding */
+}
+
+/*About footer section*/
+
+#aboutfooter {
+    padding: 20px 10px; /* Adjusted padding */
+    gap: 30px;
+}
+
+.footone{
+    width: 280px;
+}
+.foottwo{
+    width: 200px;
+}
+.footthree {
+    width: 200px;
+}
 
 }
