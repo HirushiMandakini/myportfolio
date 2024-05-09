@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mandakini</title>
+    <!-- Font Awesome 4.7 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="node_modules/particles.js/particles.js"></script>
 </head>
 <body>
 
-<header>
-<!--    navigationbar section-->
-    <section class="nav-bar">
-        <div class="logo-nav">
-            <h2><span class="logo-m">M</span>andakini</h2>
-        </div>
-        
-        <div class="nav-items">
-            <nav>
+    <header>
+        <!-- Navigation bar section -->
+        <nav class="nav-bar" role="navigation" aria-label="Main">
+            <div class="logo-nav">
+                <h2><span class="logo-m">M</span>andakini</h2>
+            </div>
+            <div class="nav-items">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -25,31 +26,31 @@
                     <li><a href="#assignments">Assignments</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
-    </section>
-</header>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </nav>
+    </header>
+    
 
 <!--home section-->
-    <section id="home">
-        <div class="home-img">
-        <img class="h-img-1" src="assets/images/qqqqqqqqqqqqq%201.png" title="profile photo" alt="profile photo"width="400">
-
-        <div class="home-titles-d">
+<section class="homesec">
+    
+    <div class="img-container">
+        <img src="assets/images/qqqqqqqqqqqqq%201.png" alt="profile photo">
+    </div>
+    <div class="hometextandbtncontainer">
+        <div class="hometextdiv">
             <h3>Hi I'm Mandakini Mendis</h3>
             <h1>Developer & Designer </h1>
             <h4>Innovation beyond imagination</h4>
-
-            <div class="home-btn">
+        </div>
+        <div class="homebtncontainer">
             <button class="myprojects-btn">My Projects</button>
             <button class="ContactMe-btn">Contact Me</button>
         </div>
-        </div>
     </div>
-
-
-    
-    </section>
+    <div id="particles-js"></div>
+</section>
 
 <!--about section-->
     <section id="about">
@@ -66,7 +67,6 @@
                 <button class="about-Contact-me">Contact me</button>
             </div>
         </div>
-        
 
     </section>
 
@@ -206,18 +206,19 @@
 <div class="footthree">
     <h3 class="title-LatestNews">Latest News</h3>
     <ul>
-        <li> Project 1 <span class="abdate">January 2024</span></li>
-        <li> Project 2 <span class="abdate">February 2024</span></li>
-        <li> Project 3 <span class="abdate">March 2024</span></li>
+        <li> Java Pos System <br> <span class="abdate">January 2024</span></li>
+        <li> portfolio <br><span class="abdate">March 2024</span></li>
+        <li> Project 3 <br><span class="abdate">March 2024</span></li>
     </ul>
 </div>
 </section>
+
 
 <!--footer section-->
 <footer>
     &copy;2024 Mandakini All Rigths Reserved.
 </footer>
 
-
+<script type="text/javascript" src="particales.js"></script>
 </body>
 </html>
