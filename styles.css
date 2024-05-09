@@ -882,7 +882,7 @@ footer {
 
     .ContactMe-btn,
     .myprojects-btn {
-        width: 100px;
+        width: 120px;
         height: 30px; /* Set the height of buttons */
         margin-top: 10px; /* Add some margin between buttons */
     }
