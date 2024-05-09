@@ -903,4 +903,13 @@ footer {
     gap: 10px 10px;
 }
   /*my assignment*/
+    /*skill*/
+
+.Skill-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 40px; /* Add a gap between images */
+}
+
+    /*skill*/
   }
