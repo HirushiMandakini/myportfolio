@@ -606,3 +606,116 @@ footer {
 }
 
 }
+
+/* Media query for MacBook Pro 13-inch (Retina) */
+@media only screen and (max-width: 1024px){
+    /*navbar*/
+    /*navbar*/
+    /*home*/
+    /*home*/
+}
+
+@media only screen and (max-width: 768px){
+    /*navbar*/
+    .nav-items {
+        display: none;
+    }
+    .fa-bars {
+        font-size: 25px; 
+        margin-right: 50px;
+        color: var(--Yellow);
+      }
+
+    /*navbar*/
+
+       /*home*/
+
+       .homesec{
+        display: flex;
+        padding: 0px 30px;
+        gap: 10px;
+    }
+    .img-container img {
+        max-width: 360px;
+    }
+
+    .hometextdiv h3 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+    
+    .hometextdiv h1 {
+        font-size: 18px;
+    }
+    
+    .hometextdiv h4 {
+        font-size: 15px;
+    }
+
+    .ContactMe-btn,
+    .myprojects-btn {
+        width: 100px;
+        height: 30px; /* Set the height of buttons */
+        margin-top: 10px; /* Add some margin between buttons */
+    }
+
+    /*home*/
+
+    /*aboutme*/
+    #about {
+        padding: 20px 20px 30px 20px; /* top right bottom left */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .aboutme-title {
+        font-size: medium;
+    }
+    .content-container {
+        display: grid;
+    }
+    .profile-picture {
+        width: 300px; /* Set the desired width */
+    }
+    .text-container {
+        margin-left: 0px; /* Adjust the margin as needed */
+        max-width: 300px;
+    }
+    .whyme-title {
+        font-size: larger;
+    }
+    .ProfessionalDesigner-title {
+        font-size: large;
+    }
+
+    .text-container p {
+        font-size: small;
+    }
+    /*aboutme*/
+
+    /*my service*/
+    #service {
+        padding: 30px 20px; /* Adjusted padding */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+     .GraphicDesign-box,
+     .WebDevelopment-box,
+     .WebDesign-box,
+     .Customer-Support-box,
+     .service-box {
+        padding: 20px; /* Add padding inside the box */
+        max-width: 240px;
+      }
+
+      .service-container {
+       grid-template-columns: repeat(2, 1fr); /* Three columns */
+       }
+
+ /*my service*/
+
+}
