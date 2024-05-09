@@ -1090,5 +1090,12 @@ footer {
     width: 260px; /* Set a maximum width for the images */
 }
  /*Project section*/
+  /*Assignment section*/
+  .Assignment-container img {
+    width: 120px; /* Set the width of the images */
+    height: 120px; 
+}
+
+ /*Assignment section*/
     
   }
