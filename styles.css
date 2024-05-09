@@ -452,3 +452,9 @@ footer {
     color: var(--White);
 }
 
+/* CSS for screens narrower than 769px */
+@media only screen and (min-width: 769px) {
+    .fa-bars {
+      display: none; /* Hide the bars icon */
+    }
+  }
