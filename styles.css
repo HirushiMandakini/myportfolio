@@ -1114,4 +1114,17 @@ footer {
 
 }
  /*Contact section*/
+  /*About footer section*/
+  .footone{
+    width: 250px;
+}
+.footone p{
+    font-size: 13px;
+}
+
+footer {
+    padding: 10px;
+    font-size: 11px; /* Adjust the font size */
+}
+ /*About footer section*/
   }
