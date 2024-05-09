@@ -896,4 +896,11 @@ footer {
     width: 300px; /* Set a maximum width for the images */
 }
  /*my project*/
+  /*my assignment*/
+.Assignment-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three columns */
+    gap: 10px 10px;
+}
+  /*my assignment*/
   }
