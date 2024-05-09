@@ -966,3 +966,87 @@ footer {
 
     
   }
+
+  @media only screen and (max-width: 375px) {
+    /*home*/
+    .hometextandbtncontainer {
+        height: 550px;
+    } 
+
+    .hometextdiv h3 {
+        font-size: 23px;
+    }
+    /*home*/
+    /*my service*/
+    #service {
+        padding: 20px 20px; /* Adjusted padding */
+    }
+
+     .GraphicDesign-box,
+     .WebDevelopment-box,
+     .WebDesign-box,
+     .Customer-Support-box,
+     .service-box {
+        padding: 20px; /* Add padding inside the box */
+        max-width: 250px;
+      }
+
+     .GraphicDesign-box p,
+     .WebDevelopment-box p,
+     .WebDesign-box p,
+     .Customer-Support-box p,
+     .service-box p {
+        font-size: 13px;
+      }
+
+      .GraphicDesign-box h2,
+      .WebDevelopment-box h2,
+      .WebDesign-box h2,
+      .Customer-Support-box h2,
+      .service-box h2 {
+         font-size: 20px;
+       }
+ /*my service*/
+    
+  }
+
+  @media only screen and (max-width: 325px) {
+    /*navbar*/
+    .logo-nav {
+        margin-left: 10px;
+    }
+    .logo-nav {
+        font-size: 13px;
+    }
+    /*navbar*/
+    /*home*/
+    .hometextandbtncontainer {
+        height: 450px;
+    } 
+
+    .hometextdiv h3 {
+        font-size: 18px;
+    }
+
+    .hometextdiv h1 {
+        font-size: 17px;
+    }
+    
+    .hometextdiv h4 {
+        font-size: 15px;
+    }
+    /*home*/
+        /*aboutme*/
+        .profile-picture {
+            width: 200px;
+            height: 200px; /* Set the desired width */
+            display: block; /* Ensure the image behaves as a block element */
+            margin: 0 auto; /* Set left and right margins to auto to center horizontally */
+        }
+        .text-container p {
+            font-size: 11px;
+        }
+        /*aboutme*/
+
+    
+  }
