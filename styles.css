@@ -717,5 +717,44 @@ footer {
        }
 
  /*my service*/
+/*my project*/
+#projects {
+    padding: 30px 20px; /* Adjusted padding */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.project-container {
+    grid-template-columns: repeat(2, 1fr); /* Three columns */
+}
+
+.project-container img {
+    width: 280px; /* Set a maximum width for the images */
+}
+ /*my project*/
+ /*my assignment*/
+ #assignments {
+    padding: 30px 20px; /* Adjusted padding */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Assignment-title {
+    font-size: x-large;
+}
+
+.Assignment-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 10px 10px;
+}
+
+.Assignment-container img {
+    width: 150px; /* Set the width of the images */
+    height: 150px; /* Set the height of the images to match the width */
+}
+
+  /*my assignment*/
 }
