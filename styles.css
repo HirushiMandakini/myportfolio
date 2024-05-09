@@ -458,3 +458,86 @@ footer {
       display: none; /* Hide the bars icon */
     }
   }
+
+  /*ipad pro */
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .logo-nav {
+        margin-left: 50px;
+    }
+
+    .nav-items ul {
+        gap: 20px;
+    }
+
+    .nav-items {
+        margin-right: 20px;
+    }
+
+    .logo-nav {
+        margin-left: 20px;
+    }
+
+    /*home*/
+
+    .homesec{
+        padding: 0px 40px; 
+        gap: 10px;
+    }
+
+    .img-container img {
+        max-width: 440px;
+    }
+
+    .hometextdiv h3 {
+        font-size: 35px;
+        letter-spacing: 4px;
+    }
+    
+    .hometextdiv h1 {
+        font-size: 30px;
+    }
+    
+    .hometextdiv h4 {
+        font-size: 20px;
+    }
+
+    .ContactMe-btn {
+        width: 130px;
+        height: 40px;
+    }
+
+    .myprojects-btn {
+        width: 130px;
+    }
+    
+
+    /*home*/
+
+    /*aboutme*/
+    .profile-picture {
+        width: 300px;
+        height: 300px; /* Set the desired width */
+    }
+    /*aboutme*/
+
+     /*service*/
+     #service {
+        background-color: var(--Black);
+        padding: 30px 150px; /* Adjusted padding */
+    }
+    
+    .GraphicDesign-box,
+    .WebDevelopment-box,
+    .WebDesign-box,
+    .Customer-Support-box,
+    .service-box {
+        padding: 20px; /* Add padding inside the box */
+    }
+    
+    .service-container {
+        grid-template-columns: repeat(2, 1fr); /* Three columns */
+    }
+
+
+}
