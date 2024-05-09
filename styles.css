@@ -1085,5 +1085,10 @@ footer {
          max-width: 70px;
        }
  /*my service*/
+  /*Project section*/
+  .project-container img {
+    width: 260px; /* Set a maximum width for the images */
+}
+ /*Project section*/
     
   }
