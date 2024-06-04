@@ -7,6 +7,43 @@
     --lightBlack: #383838;
 }
 
+
+/**/
+        /* Loading screen styles */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.904); /* Semi-transparent white background */
+            backdrop-filter: blur(15px); /* Add a blur effect */
+            z-index: 9999; /* Ensure it's on top of everything */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading-spinner {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid var(--Yellow); /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite; /* Animation for spinning */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Hide loading screen once content is loaded */
+        .loaded .loading-screen {
+            display: none;
+        }
+/*Loading screen styles*/
+
 /* General styles */
 body {
     font-family: Arial, sans-serif;
@@ -226,6 +263,25 @@ body {
     text-align: center;
     box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.18); /* Add box shadow */
 }
+
+/* Hover effect */
+.GraphicDesign-box:hover,
+.WebDevelopment-box:hover,
+.WebDesign-box:hover,
+.Customer-Support-box:hover,
+.service-box:hover {
+background-color: var(--Yellow);
+color: var(--Black);
+}
+
+.GraphicDesign-box:hover img,
+.WebDevelopment-box:hover img,
+.WebDesign-box:hover img,
+.Customer-Support-box:hover img,
+.service-box:hover img {
+    filter: brightness(0) invert(0); /* Invert colors to black on hover */
+}
+/* Hover effect */
 
 .myservice-title {
     text-align: center;
@@ -452,6 +508,8 @@ footer {
     color: var(--White);
 }
 
+
+
 /* CSS for screens narrower than 769px */
 @media only screen and (min-width: 769px) {
     .fa-bars {
@@ -460,7 +518,7 @@ footer {
   }
 
   /*ipad pro */
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .logo-nav {
         margin-left: 50px;
@@ -539,7 +597,7 @@ footer {
         grid-template-columns: repeat(2, 1fr); /* Three columns */
     }
 
-        /*Project section*/
+    /*Project section*/
 
 #projects {
     padding: 30px 150px; /* Adjusted padding */
@@ -605,14 +663,104 @@ footer {
     width: 200px;
 }
 
+
+
 }
 
-/* Media query for MacBook Pro 13-inch (Retina) */
+
 @media only screen and (max-width: 1024px){
-    /*navbar*/
-    /*navbar*/
+    /*nav*/
+    .nav-items ul {
+        gap: 20px;
+    }
+    /*nav*/
     /*home*/
-    /*home*/
+    .homesec{
+        padding: 0px 30px; 
+        gap: 10px;
+    }
+    .img-container img {
+        max-width: 380px;
+    }
+
+    .hometextdiv h3 {
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+    
+    .hometextdiv h1 {
+        font-size: 28px;
+    }
+    
+    .hometextdiv h4 {
+        font-size: 18px;
+    }
+    .myprojects-btn,
+    .ContactMe-btn {
+        width: 130px;
+        height: 40px;
+    }
+    /*aboutme*/
+    #about {
+        padding: 20px 110px 30px 110px; /* top right bottom left */
+    }
+    .profile-picture {
+        width: 300px; /* Set the desired width */
+        height: 300px;
+    }
+    /*aboutme*/
+    /*service*/
+    #service {
+        padding: 30px 40px; /* Adjusted padding */
+    }
+    .GraphicDesign-box,
+.WebDevelopment-box,
+.WebDesign-box,
+.Customer-Support-box,
+.service-box {
+    padding: 20px; /* Add padding inside the box */
+}
+.service-container {
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr); /* Three columns */
+}
+    /*service*/
+    /*projects*/
+    #projects {
+        padding: 30px 40px; /* Adjusted padding */
+    }
+    .project-container {
+        grid-template-columns: repeat(2, 1fr); /* Three columns */
+    }
+    .project-container img {
+        width: 340px; /* Set a maximum width for the images */
+    }
+        /*projects*/
+    /*assignments*/
+    #assignments {
+        padding: 30px 60px; /* Adjusted padding */
+    }
+    .Assignment-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+    }
+    .Assignment-container img {
+        width: 220px; /* Set the width of the images */
+        height: 220px; 
+    }
+        /*assignments*/
+            /*skills*/
+            #Skill {
+                background-color: var(--lightBlack);
+                padding: 40px 40px; /* Adjusted padding */
+            }
+            .Skill-container {
+                gap: 30px; /* Add a gap between images */
+            }
+            .Skill-container img {
+                width: 60px; /* Set the width of the images */
+            }
+                /*skills*/
+
 }
 
 @media only screen and (max-width: 768px){
@@ -717,8 +865,8 @@ footer {
        }
 
  /*my service*/
-/*my project*/
-#projects {
+ /*my project*/
+ #projects {
     padding: 30px 20px; /* Adjusted padding */
     display: flex;
     align-items: center;
@@ -757,75 +905,75 @@ footer {
 }
 
   /*my assignment*/
+  /*skill*/
+  #Skill {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 120px; /* Adjusted padding */
+}
+.Skill-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three columns */
+    gap: 40px; /* Add a gap between images */
+}
+
+.Skill-container img {
+    width: 70px; /* Set the width of the images */
+}
     /*skill*/
-    #Skill {
+
+
+    /*contactme*/
+    #contact {
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 40px 120px; /* Adjusted padding */
+        padding: 40px 20px; /* Adjusted padding */
     }
-    .Skill-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Three columns */
-        gap: 40px; /* Add a gap between images */
-    }
-    
-    .Skill-container img {
-        width: 70px; /* Set the width of the images */
-    }
-        /*skill*/
-    
-    
-        /*contactme*/
-        #contact {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 40px 20px; /* Adjusted padding */
-        }
-    
-        .inputname,
-        .inputemail,
-        .inputnumber {
-            width: 300px;
-            padding: 10px;
-            border-radius: 10px;
-        }
-    
-        .inputmsg {
-            width: 300px;
-            height: 50px;
-            border-radius: 10px;
-        }
-    
-        /*contactme*/
-    
-        /*About footer section*/
-    
-    #aboutfooter {
-        padding: 40px 10px; /* Adjusted padding */
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    
-    }
-    
-    
-    .footone{
+
+    .inputname,
+    .inputemail,
+    .inputnumber {
         width: 300px;
-        margin-left: 0px;
+        padding: 10px;
+        border-radius: 10px;
     }
-    .foottwo{
+
+    .inputmsg {
+        width: 300px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    /*contactme*/
+
+    /*About footer section*/
+
+#aboutfooter {
+    padding: 40px 10px; /* Adjusted padding */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.footone{
+    width: 300px;
+    margin-left: 0px;
+}
+.foottwo{
+display: none;
+}
+.footthree {
     display: none;
-    }
-    .footthree {
-        display: none;
-    }
-    
-    footer {
-        padding: 20px;
-        font-size: larger; /* Adjust the font size */
-    }
+}
+
+footer {
+    padding: 20px;
+    font-size: larger; /* Adjust the font size */
+}
 }
 
 @media only screen and (max-width: 650px) {
@@ -890,13 +1038,13 @@ footer {
         margin-top: 10px; /* Add some margin between buttons */
     }
     /*home*/
-        /*my service*/
-        .service-container {
-            grid-template-columns: repeat(1, 1fr); /* Three columns */
-            }
-      /*my service*/
+    /*my service*/
+      .service-container {
+       grid-template-columns: repeat(1, 1fr); /* Three columns */
+       }
+ /*my service*/
  /*my project*/
- .project-container {
+.project-container {
     grid-template-columns: repeat(1, 1fr); /* Three columns */
 }
 
@@ -904,14 +1052,14 @@ footer {
     width: 300px; /* Set a maximum width for the images */
 }
  /*my project*/
-  /*my assignment*/
+ /*my assignment*/
 .Assignment-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Three columns */
     gap: 10px 10px;
 }
   /*my assignment*/
-    /*skill*/
+  /*skill*/
 
 .Skill-container {
     display: grid;
@@ -920,54 +1068,10 @@ footer {
 }
 
     /*skill*/
-    footer {
-        padding: 20px;
-        font-size: medium; /* Adjust the font size */
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    /*home*/
-    .hometextandbtncontainer {
-        height: 550px;
-    } 
-
-    .hometextdiv h3 {
-        font-size: 23px;
-    }
-    /*home*/
-        /*my service*/
-        #service {
-            padding: 20px 20px; /* Adjusted padding */
-        }
-    
-         .GraphicDesign-box,
-         .WebDevelopment-box,
-         .WebDesign-box,
-         .Customer-Support-box,
-         .service-box {
-            padding: 20px; /* Add padding inside the box */
-            max-width: 250px;
-          }
-    
-         .GraphicDesign-box p,
-         .WebDevelopment-box p,
-         .WebDesign-box p,
-         .Customer-Support-box p,
-         .service-box p {
-            font-size: 13px;
-          }
-    
-          .GraphicDesign-box h2,
-          .WebDevelopment-box h2,
-          .WebDesign-box h2,
-          .Customer-Support-box h2,
-          .service-box h2 {
-             font-size: 20px;
-           }
-     /*my service*/
-
-    
+footer {
+    padding: 20px;
+    font-size: medium; /* Adjust the font size */
+}
   }
 
   @media only screen and (max-width: 375px) {
@@ -1050,7 +1154,7 @@ footer {
             font-size: 11px;
         }
         /*aboutme*/
-         /*my service*/
+    /*my service*/
     #service {
         padding: 10px 10px; /* Adjusted padding */
     }
@@ -1088,19 +1192,20 @@ footer {
          max-width: 70px;
        }
  /*my service*/
-  /*Project section*/
-  .project-container img {
+ /*Project section*/
+ .project-container img {
     width: 260px; /* Set a maximum width for the images */
 }
  /*Project section*/
-  /*Assignment section*/
-  .Assignment-container img {
+
+ /*Assignment section*/
+ .Assignment-container img {
     width: 120px; /* Set the width of the images */
     height: 120px; 
 }
 
  /*Assignment section*/
-     /*Skill section*/
+ /*Skill section*/
  .Skill-container img {
     width: 60px; /* Set the width of the images */
 }
@@ -1117,8 +1222,8 @@ footer {
 
 }
  /*Contact section*/
-  /*About footer section*/
-  .footone{
+ /*About footer section*/
+ .footone{
     width: 250px;
 }
 .footone p{
@@ -1130,4 +1235,7 @@ footer {
     font-size: 11px; /* Adjust the font size */
 }
  /*About footer section*/
+    
   }
+  
+  
