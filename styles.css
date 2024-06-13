@@ -44,6 +44,23 @@
         }
 /*Loading screen styles*/
 
+/*scroll bar*/
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--Black); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--Yellow); 
+  }
+/*scrollbar*/
+
 /* General styles */
 body {
     font-family: Arial, sans-serif;
@@ -243,6 +260,92 @@ body {
     font-size: medium;
     margin-top: 20px;
 }
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the profile picture */
+/* Keyframes for slide in from the left */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for rotating animation */
+@keyframes rotateIn {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* Keyframes for pulsing animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/**/
+/* Keyframes for sliding animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Apply the animation to the Professional Designer title */
+.ProfessionalDesigner-title {
+    display: inline-block;
+    animation: slide 2s infinite;
+}
+
+/* Optional: additional styling */
+.ProfessionalDesigner-title:hover {
+    animation-play-state: paused; /* Pauses the animation on hover */
+}
+
+/**/
+
+/* Apply the animations to the profile picture */
+.profile-picture {
+    animation: slideInLeft 1s ease-out, pulse 2s infinite ease-in-out 2s;
+}
+
+/* Optional: add additional styling */
+.profile-picture {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+/* end--Apply the animation to the profile picture */
 
 /*service section*/
 
@@ -317,6 +420,33 @@ color: var(--Black);
     width: 460px; /* Set a maximum width for the images */
     height: auto; /* Maintain the aspect ratio */
 }
+.project-container a:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+.project-link {
+    position: relative; /* Set position to relative for tooltip positioning */
+}
+
+.project-link::after {
+    content: attr(title); /* Display the title attribute content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for the tooltip */
+    color: #fff; /* White text color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent line breaks in the tooltip */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+.project-link:hover::after {
+    opacity: 1; /* Show the tooltip on hover */
+}
+
+
 
 /*Assignment section*/
 
@@ -341,7 +471,35 @@ color: var(--Black);
     height: 300px; /* Set the height of the images to match the width */
     object-fit: cover; /* Maintain aspect ratio and crop as needed */
 }
+.Assignment-container a {
+    position: relative; /* Set position to relative for tooltip positioning */
+}
 
+.Assignment-container a::after {
+    content: "View in GitHub"; /* Display the text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for the tooltip */
+    color: #fff; /* White text color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+.Assignment-container a:hover::after {
+    opacity: 1; /* Show the tooltip on hover */
+}
+
+.Assignment-container a img {
+    transition: transform 0.3s ease; /* Apply a smooth transition */
+}
+
+.Assignment-container a:hover img {
+    transform: scale(0.95); /* Scale the image by 1.1 on hover */
+}
 
 /*Skill section*/
 
@@ -480,7 +638,7 @@ color: var(--Black);
 .foottwo ul li a {
     text-decoration: none;
     color: inherit; /* Ensure links inherit text color */
-    font-size: larger;
+    font-size: medium;
 }
 
 .abdate {
@@ -501,9 +659,9 @@ color: var(--Black);
 }
 
 footer {
-    padding: 40px;
+    padding: 20px;
     text-align: center; /* Center align the text */
-    font-size: x-large; /* Adjust the font size */
+    font-size: 15px; /* Adjust the font size */
     background-color: var(--Black);
     color: var(--White);
 }
@@ -667,6 +825,22 @@ footer {
 
 }
 
+@media only screen and (max-width: 1550px){
+    .hometextdiv h3 {
+        font-size: 50px;
+    }
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .project-container {
+        grid-template-columns: repeat(2, 1fr); /* Three columns */
+    }
+    .Assignment-container {
+        grid-template-columns: repeat(4, 1fr); /* Three columns */
+
+    }
+
+}
 
 @media only screen and (max-width: 1024px){
     /*nav*/
@@ -1238,4 +1412,7 @@ footer {
     
   }
   
+
+  
+
   
