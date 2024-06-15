@@ -203,6 +203,21 @@ body {
     border: 2px solid var(--Yellow);
 }
 
+.hometextandbtncontainer {
+    overflow: hidden; /* Hide overflow to clip the sliding content */
+}
+
+.hometextdiv,
+.homebtncontainer {
+    transform: translateX(100%); /* Initially translate content out of view */
+    transition: transform 1s ease; /* Smooth transition effect */
+}
+
+.loaded .hometextdiv.animate-slide,
+.loaded .homebtncontainer.animate-slide {
+    transform: translateX(0); /* Slide content into view */
+}
+
 
 
 /*home*/
